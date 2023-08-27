@@ -1,0 +1,263 @@
+define([], function() { return {
+  "name": "THIRD_PARTY_AGGREGATOR_CONSENT",
+  "data": {
+    "sharePersonalInformationState": {
+      "type": "OnOff"
+    },
+    "shareFutureAccountsState": {
+      "type": "OnOff"
+    },
+    "thirdPartyAccessDataCategories": {
+      "type": "List",
+      "items": {
+        "dataCategoryId": "Description"
+      }
+    },
+    "eligibleAccounts": {
+      "type": "List",
+      "items": {
+        "accountId": {
+          "type": "Description",
+          "exportable": true
+        },
+        "accountDisplayName": "Description",
+        "accessAllowed": "OnOff",
+        "virtualAccountNumberAccessAllowed": "OnOff"
+      }
+    },
+    "sharedAccounts": {
+      "type": "List",
+      "items": {
+        "accountId": {
+          "type": "Description",
+          "exportable": true
+        },
+        "accountDisplayName": "Description",
+        "accessAllowed": "OnOff",
+        "virtualAccountNumberAccessAllowed": "OnOff"
+      }
+    },
+    "virtualAccountNumberEligible": {
+      "type": "OnOff"
+    },
+    "thirdPartyAccessDetails": {
+      "type": "List",
+      "items": {
+        "thirdPartyApplicationName": "Description",
+        "thirdPartyCompanyName": "Description",
+        "thirdPartyApplicationIcon": "Description",
+        "aggregatorCustomAdvisory": "Description",
+        "thirdPartyAggregatorName": "Description"
+      }
+    },
+    "eligibleAccount": {
+      "type": "OnOff"
+    },
+    "thirdPartyApplicationConsent": {
+      "type": "OnOff"
+    },
+    "allAccountsSelected": {
+      "type": "OnOff"
+    },
+    "futureAccountsAccess": {
+      "type": "OnOff"
+    },
+    "isAmazon": {
+      "type": "OnOff"
+    },
+    "consentOptionId": {
+      "type": "Description"
+    },
+    "thirdPartyApplicationName": {
+      "type": "Description"
+    },
+    "virtualAccountNumberAccounts": {
+      "type": "List",
+      "items": {
+        "accountId": {
+          "type": "Description",
+          "exportable": true
+        },
+        "accountDisplayName": "Description"
+      }
+    },
+    "virtualAccountNumberAccountIds": {
+      "type": "List",
+      "itemType": "Description"
+    },
+    "allVirtualAccountNumberAccountsSelected": {
+      "type": "OnOff"
+    },
+    "shareVirtualAccountNumberErrorState": {
+      "type": "OnOff"
+    },
+    "aggregatorType": {
+      "type": "Description"
+    },
+    "earlyWarningServicesDisplayName": {
+      "type": "Description"
+    },
+    "consentProgressSteps": {
+      "type": "Number"
+    },
+    "totalConsentEligibleAccounts": {
+      "type": "Number"
+    }
+  },
+  "actions": {
+    "shareFutureAccounts": true,
+    "sharePersonalInformation": true,
+    "acceptThirdPartyAccessConsent": true,
+    "doNotAcceptThirdPartyAccessConsent": true,
+    "exitThirdPartyAggregatorConsent": true,
+    "requestLegalAgreements": true,
+    "selectAllAccounts": true,
+    "requestActiveThirdPartyAccessCategoryDetailsHelpMessage": true,
+    "requestEligibleAccountsHelpMessage": true,
+    "requestFutureAccountsAccess": true,
+    "requestPhoneNumberAdvisory": true,
+    "exitPhoneNumberAdvisory": true,
+    "requestVirtualAccountNumberConsentOption": true,
+    "requestVirtualAccountNumberConsentAdvisoryHelpMessage": true,
+    "confirmVirtualAccountNumberRequest": true,
+    "doNotConfirmVirtualAccountNumberRequest": true,
+    "confirmThirdPartyConsentRequest": true,
+    "requestNextStep": true,
+    "openAccountDetails": true,
+    "closeAccountDetails": true,
+    "openBalanceAndTransactions": true,
+    "closeBalanceAndTransactions": true,
+    "openPersonalInformation": true,
+    "closePersonalInformation": true,
+    "openTaxInformation": true,
+    "closeTaxInformation": true,
+    "openVirtualAccountNumber": true,
+    "closeVirtualAccountNumber": true,
+    "openMoveMoney": true,
+    "closeMoveMoney": true,
+    "requestAccountStatements": true,
+    "exitAccountStatements": true,
+    "selectAccountToShare": true,
+    "requestAccountSelection": true,
+    "requestAccountSelectionAndReview": true,
+    "checkedSelectAllAccounts": true,
+    "uncheckedSelectAllAccounts": true,
+    "checkedShareFutureAccounts": true,
+    "uncheckedShareFutureAccounts": true,
+    "requestCoBrandTaxInformation": true,
+    "exitCoBrandTaxInformation": true,
+    "requestCoBrandPersonalInformation": true,
+    "exitCoBrandPersonalInformation": true,
+    "requestCoBrandAccountDetails": true,
+    "exitCoBrandAccountDetails": true,
+    "requestCoBrandBalanceAndTransactions": true,
+    "exitCoBrandBalanceAndTransactions": true,
+    "requestCoBrandVirtualAccountNumber": true,
+    "exitCoBrandVirtualAccountNumber": true,
+    "requestCoBrandMoveMoney": true,
+    "exitCoBrandMoveMoney": true,
+    "requestCoBrandAccountStatements": true,
+    "exitCoBrandAccountStatements": true
+  },
+  "states": {
+    "enhancedAccessState": true,
+    "vanFeatureState": true,
+    "requestDocumentOverlay": true,
+    "errorState": true,
+    "isSubUser": true,
+    "showCloseWindowState": true,
+    "showSpinnerState": true,
+    "consentStepPartial": true
+  },
+  "settings": {
+    "shareFutureAccountsLabel": true,
+    "shareFutureAccountsSecondaryLabel": true,
+    "shareFutureAccountsCoBrandLabel": true,
+    "shareFutureAccountsCoBrandSecondaryLabel": true,
+    "sharePersonalInformationLabel": true,
+    "extraPermissionsHeader": true,
+    "accessAllowedAccountsHeader": true,
+    "shareAccountsDisclaimerAdvisory": true,
+    "shareFromAccountsHeader": true,
+    "shareFromAccountsMessage": true,
+    "aggregatorCustomMessage": true,
+    "shareAccountsMessageHeader": true,
+    "shareAccountsHeader": true,
+    "eligibleAccountsHelpMessage": true,
+    "requestEligibleAccountsHelpMessageAda": true,
+    "thirdPartyAggregatorConsentHeader": true,
+    "acceptThirdPartyAccessConsentLabel": true,
+    "doNotAcceptThirdPartyAccessConsentLabel": true,
+    "exitThirdPartyAggregatorConsentLabel": true,
+    "thirdPartyAggregatorConsentMessageHeader": true,
+    "thirdPartyAggregatorConsentMessage": true,
+    "thirdPartyAggregatorConsentMessageAdvisory": true,
+    "taxInformationSharedMessage": true,
+    "thirdPartyAggregatorConsentErrorHeader": true,
+    "thirdPartyAggregatorConsentError": true,
+    "thirdPartyAggregatorConsentErrorAdvisory": true,
+    "profileLabel": true,
+    "accountSummaryInformationLabel": true,
+    "balanceAndTransactionsLabel": true,
+    "taxInformationLabel": true,
+    "investmentAccountBreakdownLabel": true,
+    "thirdPartyQuickpayConsentConfirmationMessage": true,
+    "requestLegalAgreementsLabel": true,
+    "quickpayLabel": true,
+    "requestFutureAccountsAccessLabel": true,
+    "selectAllAccountsLabel": true,
+    "selectAllEligibleAccountsLabel": true,
+    "eligibleAccountsMessage": true,
+    "thirdPartyAggregatorConsentAdvisory": true,
+    "activeThirdPartyAccessCategoryDetailsHelpMessage": true,
+    "activeThirdPartyAccessCategoryDetailsHelpMessageAda": true,
+    "activeThirdPartyAccessCategoryCoBrandDetailsHelpMessage": true,
+    "requestPhoneNumberAdvisoryLabel": true,
+    "exitPhoneNumberAdvisoryLabel": true,
+    "addPhoneNumberAdvisory": true,
+    "virtualAccountNumberConsentHeader": true,
+    "virtualAccountNumberConsentAdvisory": true,
+    "virtualAccountNumberConsentAdvisoryHelpMessage": true,
+    "requestVirtualAccountNumberConsentAdvisoryHelpMessageAda": true,
+    "shareFromvirtualAccountNumberAccountsHeader": true,
+    "confirmRequestLabel": true,
+    "doNotConfirmRequestLabel": true,
+    "confirmThirdPartyConsentRequestLabel": true,
+    "selectAnyOptionLabel": true,
+    "confirmThirdPartyErrorMessageHeader": true,
+    "chaseLogoAda": true,
+    "enhancedThirdPartyAggregatorConsentLoginAdvisory": true,
+    "thirdPartyInformationHeader": true,
+    "thirdPartyInformationAdvisory": true,
+    "chaseBankLabel": true,
+    "chaseBankLabelAda": true,
+    "aggregatorLabel": true,
+    "aggregatorLabelAda": true,
+    "applicationLabel": true,
+    "applicationLabelAda": true,
+    "thirdPartyAccessMessage": true,
+    "accountAccessMessage": true,
+    "accountAccessCoBrandMessage": true,
+    "accountSelectionMessage": true,
+    "accountDeselectionMessage": true,
+    "accountDeselectionCoBrandMessage": true,
+    "thirdPartyApplicationDataCatagorySharingHeader": true,
+    "thirdPartyApplicationDataCatagorySharingCoBrandHeader": true,
+    "thirdPartyDataCategoryDetailsMessage": true,
+    "eligibleAccountsHeader": true,
+    "eligibleAccountsAdvisory": true,
+    "sharedAccountsHeader": true,
+    "subUserUnAuthorizedMessage": true,
+    "reviewAndConnectHeader": true,
+    "selectedAccountsHeader": true,
+    "changeAccountSelectionLabel": true,
+    "dataCategoryInformationHeader": true,
+    "aggregatorConsentMessageAdvisory": true,
+    "aggregatorCoBrandConsentMessageAdvisory": true,
+    "connectMyAccountsLabel": true,
+    "progressStepAda": true,
+    "earlyWarningServicesDisplayNameAdvisory": true,
+    "dataCategoriesCoBrandDetails": true,
+    "linkMyAccountsCoBrandLabel": true
+  }
+}; });
